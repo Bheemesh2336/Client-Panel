@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "client-login-483d7": {
+      "hosting": {
+        "clientpanel": [
+          "client-login-483d7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "client-login-483d7"
+  }
+}

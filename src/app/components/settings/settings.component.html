@@ -1,0 +1,43 @@
+<div>
+    <div class="col-md-6">
+        <a routerLink='/' class="btn btn-link">
+            <i class="fa fa-arrow-circle-o-left"></i>Back to DashBoard</a>
+    </div>
+    <div class="col-md-6"></div>
+</div>
+<div class="card" class="col-md-12">
+    <div class=" card-header">
+        Edit Settings
+    </div>
+    <div class="card-body">
+        <form (submit)="OnSubmit()">
+            <ul>
+                <li class="settings">
+                    <h6>Allow Registration</h6>
+                    <label class="switch">
+                        <input type="checkbox" name="allowRegistration" [checked]="settings.allowRegistration"
+                            (change)='settings.allowRegistration=!settings.allowRegistration'>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="settings">
+                    <h6>Disable Balance On Add</h6>
+                    <label class="switch">
+                        <input type="checkbox" name="disableBalanceOnAdd" [checked]="settings.disableBalanceOnAdd"
+                            (change)='settings.disableBalanceOnAdd=!settings.disableBalanceOnAdd'>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+                <li class="settings">
+                    <h6>Disable Balance On Edit</h6>
+                    <label class="switch">
+                        <input type="checkbox" name="disableBalanceOnEdit" [checked]="settings.disableBalanceOnEdit"
+                            (change)='settings.disableBalanceOnEdit=!settings.disableBalanceOnEdit'>
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+        </form>
+    </div>
+</div>
